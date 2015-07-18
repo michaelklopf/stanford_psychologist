@@ -10,6 +10,10 @@ import UIKit
 
 class PsychologistViewController: UIViewController {
 
+    @IBAction func nothing(sender: UIButton) {
+        performSegueWithIdentifier("nothing", sender: nil)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var destination = segue.destinationViewController as? UIViewController
         if let navCon = destination as? UINavigationController {
@@ -22,6 +26,8 @@ class PsychologistViewController: UIViewController {
                     hvc.happiness = 0
                 case "meh":
                     hvc.happiness = 50
+                case "nothing":
+                    hvc.happiness = 10
                 default:
                     hvc.happiness = 100
                 }
