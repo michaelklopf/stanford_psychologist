@@ -10,14 +10,19 @@ import UIKit
 
 class PsychologistViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let hvc = segue.destinationViewController as? HappinessViewController {
+            if let identifier = segue.identifier {
+                switch identifier {
+                case "sad":
+                    hvc.happiness = 0
+                case "meh":
+                    hvc.happiness = 50
+                default:
+                    hvc.happiness = 100
+                }
+            }
+        }
     }
 
 

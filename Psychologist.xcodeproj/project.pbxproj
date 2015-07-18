@@ -14,6 +14,8 @@
 		4C90385F1B58BA4500EEAA77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C90385D1B58BA4500EEAA77 /* LaunchScreen.storyboard */; };
 		4C90386A1B58BA4600EEAA77 /* PsychologistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9038691B58BA4600EEAA77 /* PsychologistTests.swift */; };
 		4C9038751B58BA4600EEAA77 /* PsychologistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9038741B58BA4600EEAA77 /* PsychologistUITests.swift */; };
+		4C9038841B5AECB300EEAA77 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9038821B5AECB300EEAA77 /* HappinessViewController.swift */; };
+		4C9038851B5AECB300EEAA77 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9038831B5AECB300EEAA77 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4C9038701B58BA4600EEAA77 /* PsychologistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsychologistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9038741B58BA4600EEAA77 /* PsychologistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistUITests.swift; sourceTree = "<group>"; };
 		4C9038761B58BA4600EEAA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C9038821B5AECB300EEAA77 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		4C9038831B5AECB300EEAA77 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				4C9038541B58BA4500EEAA77 /* AppDelegate.swift */,
+				4C9038821B5AECB300EEAA77 /* HappinessViewController.swift */,
+				4C9038831B5AECB300EEAA77 /* FaceView.swift */,
 				4C9038561B58BA4500EEAA77 /* PsychologistViewController.swift */,
 				4C9038581B58BA4500EEAA77 /* Main.storyboard */,
 				4C90385B1B58BA4500EEAA77 /* Assets.xcassets */,
@@ -256,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9038571B58BA4500EEAA77 /* PsychologistViewController.swift in Sources */,
+				4C9038841B5AECB300EEAA77 /* HappinessViewController.swift in Sources */,
 				4C9038551B58BA4500EEAA77 /* AppDelegate.swift in Sources */,
+				4C9038851B5AECB300EEAA77 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
