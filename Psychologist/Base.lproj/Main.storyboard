@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Psychologist View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PsychologistViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you see in your dreams?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="86p-dg-HJO">
+                                <rect key="frame" x="20" y="20" width="560" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-RG-Vki">
+                                <rect key="frame" x="229" y="279" width="142" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="ZW7-wT-pvn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Dancing Tree"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZW7-wT-pvn"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cli-9L-nz4">
+                                <rect key="frame" x="234" y="230" width="132" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="486-2u-IXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Golden Bear"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="486-2u-IXg"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-P9-hNI">
+                                <rect key="frame" x="254" y="328" width="92" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="brH-GP-0gD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Buckeye"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="brH-GP-0gD"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y9b-RG-Vki" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="24Q-Ky-3hL"/>
+                            <constraint firstItem="Mcf-P9-hNI" firstAttribute="top" secondItem="Y9b-RG-Vki" secondAttribute="bottom" constant="8" symbolic="YES" id="3YN-Zu-Fnt"/>
+                            <constraint firstItem="Y9b-RG-Vki" firstAttribute="centerX" secondItem="86p-dg-HJO" secondAttribute="centerX" id="7hS-c2-e8b"/>
+                            <constraint firstItem="Y9b-RG-Vki" firstAttribute="top" secondItem="Cli-9L-nz4" secondAttribute="bottom" constant="8" symbolic="YES" id="Bx2-EM-t96"/>
+                            <constraint firstItem="86p-dg-HJO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="D8b-d2-7gV"/>
+                            <constraint firstItem="Y9b-RG-Vki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IwV-IX-vPa"/>
+                            <constraint firstItem="86p-dg-HJO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LGd-Rd-9F2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y9b-RG-Vki" secondAttribute="bottom" constant="286" id="Ly0-Ir-eAU"/>
+                            <constraint firstItem="Mcf-P9-hNI" firstAttribute="centerX" secondItem="Y9b-RG-Vki" secondAttribute="centerX" id="fxs-E5-YRg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="86p-dg-HJO" secondAttribute="bottom" constant="522" id="h7F-9R-Kqg"/>
+                            <constraint firstItem="Cli-9L-nz4" firstAttribute="centerX" secondItem="Y9b-RG-Vki" secondAttribute="centerX" id="sKh-jx-TTj"/>
+                            <constraint firstItem="86p-dg-HJO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zFh-8y-AkQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7hS-c2-e8b"/>
+                                <exclude reference="Ly0-Ir-eAU"/>
+                                <exclude reference="h7F-9R-Kqg"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="429"/>
         </scene>
     </scenes>
 </document>
